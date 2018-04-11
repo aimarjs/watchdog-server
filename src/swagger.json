@@ -1,0 +1,24 @@
+{
+  "info": {
+    "title": "Watchdog API",
+    "description": "Service monitoring",
+    "termsOfService": "",
+    "contact": {
+      "name": "API Support",
+      "url": "",
+      "email": "aimar.aareleid@pds.nl"
+    },
+    "license": {
+      "name": "Apache 2.0",
+      "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
+    },
+    "version": "1.0.0"
+  },
+  "swagger": "2.0",
+  "paths": {},
+  "definitions": {},
+  "responses": {},
+  "parameters": {},
+  "securityDefinitions": {},
+  "tags": []
+}
