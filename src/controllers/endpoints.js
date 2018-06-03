@@ -44,3 +44,19 @@ exports.post = (req, res, next) => {
       });
     });
 };
+
+exports.delete = (req, res, next) => {
+  const id = req.params.id;
+
+  Endpoint.findOneAndRemove({ _id: id })
+    .then(response => {
+      res.status(200).json({
+        message: `Endpoint with the id: ${id} has been removed`
+      });
+    })
+    .catch(error => {
+      res.status(404).json({
+        error: error
+      });
+    });
+};

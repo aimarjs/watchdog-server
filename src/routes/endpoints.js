@@ -13,10 +13,19 @@ router.get("/", endpointControllers.getAll).describe({
   },
   summary: "Route for fetching all available endpoints"
 });
+
 router.post("/", endpointControllers.post).describe({
   responses: {
     200: {
       description: "Post endpoints for monitoring"
+    }
+  }
+});
+
+router.delete("/:id", endpointControllers.delete).describe({
+  responses: {
+    200: {
+      description: "Delete endpoint from monitoring"
     }
   }
 });
