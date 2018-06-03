@@ -7,7 +7,8 @@
   "scripts": {
     "swagg": "swagger-jsdoc -d swaggerDef.js -o src/swagger.json",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon server.js && npm run swagg"
+    "dev": "nodemon server.js && npm run swagg",
+    "start": "node server.js"
   },
   "author": "",
   "license": "ISC",
